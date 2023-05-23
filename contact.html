@@ -14,19 +14,35 @@
             background:linear-gradient(to bottom right,indigo,teal);
             background-repeat:no-repeat;
             height: 700px;
+            padding-top:100px;
+            padding-left:300px;
+            padding-right:300px;
+            padding-bottom:200px
         }
-        .ctr
+        .button
         {
-            text-align:center;
+            display:inline-block;
         }
     </style>
     <body>
         <h1 class="alg">Contact Us</h1>    
-        <p class="alg">Got a question?We'd love to hear fom you.
-            Send us a message and we'll respond to you as soon as possible</p>
+        <p class="alg">Got a question?We'd love to hear fom you.Send us a message and we'll respond to you as soon as possible</p>
         <br>
-        <label for="Name"></label>
-        <input type="text" name="Name" id="Name">
-
+        <label class="alg">Name:</label>
+        <br>
+        <input type="text" name="Name" id="Name" size="50">
+        <br>
+        <br>
+        <label class="alg">Email Address:</label>
+        <br>
+        <input type="email" name="Email Address" id="Email Address" size="50">
+        <br>
+        <br>
+        <label class="alg">Message:</label>
+        <br>
+        <textarea name="Message" id="Message" cols="40" rows="10"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Send Message">
     </body>
 </html>
