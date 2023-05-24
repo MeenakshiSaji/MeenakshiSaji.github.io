@@ -1,4 +1,3 @@
 # MeenakshiSaji.github.io
-![webpage](rsetweb.png)
-![nextwebpage](webpage.png)
-![lastpage](rajagiripage.png)
+![webpage](resume.png)
+![nextwebpage](resume1.png)
