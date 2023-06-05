@@ -2,6 +2,12 @@
 <html>
     <head>
         <title>Registration Form</title>
+        <title>Submit Alert</title>
+        <script>
+            function showAlert(){
+                alert("Submit Button clicked!");
+            }
+        </script>
     </head>
     <style>
         body
@@ -22,6 +28,13 @@
             padding-top:20px;
             padding-right:45px;
         }
+        .button
+        {
+            background:rgb(55, 119, 238);
+            height:30px;
+            width:70px;
+            color:white;
+        }
     </style>
     <body>
         <div class="box">
@@ -36,16 +49,56 @@
             <div>
                 <label for="Last Name">Second Name</label>
                 <br>
-                <input type="text" name="Second Name" id="Last Name" size="30">
+                <input type="text" name="Second Name" id="Second Name" size="30">
             </div>
-            </div>
-            <div style="d">            
-                <div style="padding-top:30px">
+            </div>  
+            <div style="display:flex;">          
+                <div style="padding-top:20px;">
                 <label for="Name">Birthday</label>
                 <br>
                 <input type="date" name="date" id="date">
                 </div>
+                <div style="padding-left:110px">
+                    <div style="padding-top:20px;">
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <label><input type="radio" name="radio" value="Male" />Male</label>
+                        <label><input type="radio" name="radio" value="Female" />Female</label>
+                    </fieldset>
+                    </div>
+                </div>
             </div>
+            <div style="display:flex;">
+                <div style="padding-top:20px;">
+                    <label for="Name">Email</label>
+                    <br>
+                    <input type="email" name="Email" id="Email" size="30">
+                </div>
+                <div style="padding-top:20px;">
+                    <div style="padding-left:30px;">
+                    <label for="Name">Phone Number</label>
+                    <br>
+                    <input type="number" name="Phone Number" id="Phone Number" size="40">
+                    </div>
+                </div>
+            </div>
+            <div style="padding-top:30px">
+                <label for="Name">Subject</label>
+                <br>
+                <select name="subject" id="subject">
+                    <option value="Choose Option">Choose Option</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Electronics and Communications">Electronics and Communications</option>
+                    <option value="Applied Electronics and Instrumental">Applied Electronics and Instrumental</option>
+                    <option value="Mechanical">Meechanical</option>
+                    <option value="Electrical and Electronics">Electrical and Electronics</option>
+                    <option value="Artificial Intelligence and Data Science">Artificial Intelligence and Data Science</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Submit" class="button" onclick="showAlert()">
             </form>
         </div>
     </body>
